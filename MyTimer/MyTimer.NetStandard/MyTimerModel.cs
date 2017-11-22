@@ -9,6 +9,7 @@ namespace MyTimer
         private Timer timer;
 
         public MyTimerModel()
+
         {
             var callBack = new TimerCallback((o) => { CurrentCount.Value++; });
             timer = new Timer(callBack, null, Timeout.Infinite, Timeout.Infinite);
